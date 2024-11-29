@@ -1,0 +1,10 @@
+# Get http://localhost:8082/
+
+
+curl -X POST http://localhost:8082/tasks \
+-H "Content-Type: application/json" \
+-d '{
+  "title": "Complete project",
+  "description": "Finish the project by the end of the week",
+  "deadline": "2024-09-15T23:59:59.999Z"
+}'

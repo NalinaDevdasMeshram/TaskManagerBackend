@@ -36,8 +36,7 @@ mongoose
   .catch((error) => console.log("Error in Connecting DB", error));
 
 app.use(cors());
-// app.use(express.json());
-
+app.use(express.json());
 app.use("/tasks", taskRoutes);
 
 app.listen(PORT, () => {
